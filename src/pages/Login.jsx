@@ -5,7 +5,7 @@ import { Button, Container, Paper, TextField, Typography, Stack, Avatar, IconBut
 import { useFileHandler, useInputValidation, useStrongPassword } from "6pp";
 import { VisuallyHidden } from "../components/styles/StyledComponents";
 import { usernameValidator } from "../utils/Validators";
-import { ErrorHandler } from "../components/ErrorHandler";
+import { ErrorHandler } from "../lib/ErrorHandler";
 
 const handleLogin = (e) => {
     e.preventDefault();

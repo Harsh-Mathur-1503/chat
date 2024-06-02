@@ -1,0 +1,45 @@
+.not-found-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://images.unsplash.com/photo-1597839219216-a773cb2473e4?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .glassy-paper {
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for glassy effect */
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); /* Shadow for glassy effect */
+    border-radius: 8px; /* Adjust border radius as needed */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px; /* Adjust padding as needed */
+  }
+  
+  .not-found-title {
+    font-size: 24px; /* Adjust font size as needed */
+    margin-bottom: 10px; /* Adjust margin as needed */
+  }
+  
+  .not-found-message {
+    font-size: 16px; /* Adjust font size as needed */
+    margin-bottom: 20px; /* Adjust margin as needed */
+  }
+  
+  .go-home-button {
+    background-color: #033e7d; /* Primary color for the button */
+    color: #fff; /* Text color for the button */
+    padding: 10px 20px; /* Adjust padding as needed */
+    border: none;
+    border-radius: 5px; /* Adjust border radius as needed */
+    text-decoration: none;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  .go-home-button:hover {
+    background-color: #0056b3; /* Darker shade of primary color on hover */
+  }
+  
