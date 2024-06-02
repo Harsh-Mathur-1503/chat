@@ -1,14 +1,19 @@
 import { BrowserRouter ,Routes,Route } from "react-router-dom"
+import { lazy } from "react"
 
+const Home = lazy(() => import('./pages/Home')); // import Home component lazily
+const Login = lazy(() => import('./pages/Login')); // import Login component lazily
+const Chat = lazy(() => import('./pages/Chat')); // import Chat component lazily
+const Groups = lazy(() => import('./pages/Groups')); // import Group component lazily
 
 const App = () => {
   return (
     <BrowserRouter>
     <Routes>
-      <Route path="/" element={<h1>Home</h1>} />
-      <Route path="/about" element={<h1>About</h1>} />
-      <Route path="/services" element={<h1>Services</h1>} />
-      <Route path="/contact" element={<h1>Contact</h1>} />
+      <Route path="/" element={<Home />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/chat/:chatId" element={<Chat />} />
+      <Route path="/group" element={<Groups />} />
     </Routes>
     </BrowserRouter>
   )
