@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { lazy } from "react";
+import { lazy, Suspense } from "react";
 import ProtectRoute from "./components/auth/ProtectRoute";
+import { LayoutLoader } from "./components/layout/Loaders";
 
 const Home = lazy(() => import('./pages/Home'));
 const Login = lazy(() => import('./pages/Login'));
@@ -13,6 +14,7 @@ const user = true; // Assuming user is initially not authenticated
 const App = () => {
   return (
     <BrowserRouter>
+    <Suspense fallback={<LayoutLoader />}>
       <Routes>
         <Route path="/login" element={
         <ProtectRoute user={!user} redirect="/">
@@ -27,6 +29,7 @@ const App = () => {
 
         <Route path="*" element={<NotFound />} />
       </Routes>
+      </Suspense>
     </BrowserRouter>
   );
 };

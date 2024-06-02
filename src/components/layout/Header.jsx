@@ -1,4 +1,4 @@
-import { AppBar, Box, IconButton, Toolbar, Typography } from "@mui/material"
+import { AppBar, Backdrop, Box, IconButton, Toolbar, Typography } from "@mui/material"
 import { dark1, light2 } from "../../constants/color"
 import { Menu as MenuIcon , Search as SearchIcon , Add as AddIcon ,Group as GroupIcon , Logout as LogoutIcon , Notifications as NotificationsIcon } from "@mui/icons-material"; 
 import { useNavigate } from "react-router-dom";
@@ -110,7 +110,7 @@ const Header = () => {
 
             {
                 isSearch && (
-                    <Suspense fallback={<div>Loading...</div>}>
+                    <Suspense fallback={<Backdrop open />}>
                         <SearchDialog />
                     </Suspense>
                 )
