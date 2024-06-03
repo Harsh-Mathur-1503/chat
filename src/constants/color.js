@@ -1,4 +1,4 @@
-export const dark1 = "#272829";
-export const dark2 = "#61677A";
-export const light1 = "#D8D9DA";
-export const light2 = "#FFF6E0";
+export const dark1 = "#222831";
+export const dark2 = "#393E46";
+export const light1 = "#E3FDFD";
+export const light2 = "#EEEEEE";
