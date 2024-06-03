@@ -5,6 +5,7 @@ import { dark2 } from "../../constants/color";
 import ChatList from "../specific/ChatList";
 import { sampleChats } from "../../constants/sampleData";
 import { useParams } from "react-router-dom";
+import Profile from "../specific/Profile";
 
 const AppLayout = (WrappedComponent) => {
   const ComponentWithLayout = (props) => {
@@ -42,6 +43,7 @@ const AppLayout = (WrappedComponent) => {
             padding: "2rem",
             bgcolor: dark2
           }} height={"100%"}>
+            <Profile />
           </Grid>
         </Grid>
         <div>Footer</div>
